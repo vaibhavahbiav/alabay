@@ -19,11 +19,11 @@ class GamePreviewSlider extends Component {
 
     componentDidMount() {
         this.interval = setInterval(this.handleNext, 5000);
-      }
-    
-      componentWillUnmount() {
+    }
+
+    componentWillUnmount() {
         clearInterval(this.interval);
-      }
+    }
 
     handleNext = () => {
         this.setState((prevState) => ({
@@ -37,20 +37,20 @@ class GamePreviewSlider extends Component {
         const displayedImages = this.images.slice(start, start + 3);
 
         return (
-            <section>
-                <div className='flex flex-col lg:space-y-11 justify-start items-start mt-28'>
-                    <div className='flex items-center font-montserrat lg:font-black lg:text-[64px]'>
-                        <span className='text-[#FFA800]'>GAME </span>
+            <section className='py-4'>
+                <div className='flex flex-col item space-y-5 items-center justify-center lg:space-y-11 lg:justify-start lg:items-start mt-10 lg:mt-28 mx-4 lg:mx-auto'>
+                    <div className='flex items-center font-montserrat font-black text-6xl lg:text-[64px]'>
+                        <span className='text-[#FFA800]'>GAME&nbsp;</span>
                         <span className='text-[#353535]'>PREVIEWS</span>
                     </div>
-                    <div className='flex space-x-4 items-center justify-between'>
-                        <div className='flex lg:space-x-10'>
+                    <div className='lg:space-x-4 relative lg:min-w-full lg:mx-auto min-w-full'>
+                        <div className='flex space-x-4 lg:space-x-10 '>
                             {displayedImages.map((src, i) => (
-                                <img key={i} src={src} alt={`game preview ${start + i + 1}`} />
+                                <img className='size-[200px] lg:size-[500px] rounded-[28px] overflow-clip' key={`game preview - ${i}`} src={src} alt={`game preview ${start + i + 1}`} />
                             ))}
                         </div>
                         <button onClick={this.handleNext}>
-                            <img src="./assets/games/game-rarrow.png" alt="next arrow" />
+                            <img className='absolute top-1/2 -translate-y-1/2 right-4 scale-50 lg:scale-100' src="./assets/games/game-rarrow.png" alt="game preview slidernext arrow" />
                         </button>
                     </div>
                 </div>

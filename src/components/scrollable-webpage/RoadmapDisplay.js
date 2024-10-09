@@ -26,13 +26,12 @@ const roadmapItems = [
 export class RoadmapDisplay extends Component {
     render() {
         return (
-            <div className='flex space-x-5 rounded-2xl overflow-clip self-center items-center'>
+            <div className='flex space-x-2 w-full lg:space-x-5 rounded-2xl overflow-clip self-center items-center'>
                 {roadmapItems.map((item, i) => {
-                    // console.log(item, i);
                     return(
-                    <div key={i} id={i} className='flex flex-col justify-between text-center text-white font-montserrat font-black text-[40px] w-[397px] h-[725px]'>
-                        <span className='mt-6'>{item.text}</span>
-                        <img src={item.image} alt="roadmap" />
+                    <div key={`roadmap item - ${i}`} className={`bg-[${item.color}] flex flex-col justify-between items-center text-center text-white font-montserrat font-black text-base w-[150px] h-[200px] lg:text-[40px] lg:w-[397px] lg:h-[725px]`}>
+                        <span className='mt-2 lg:mt-6'>{item.text}</span>
+                        <img className='w-1/2 lg:w-full' src={item.image} alt="roadmap" />
                     </div>
                     )
                 })}

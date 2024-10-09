@@ -53,18 +53,18 @@ export class MerchSlider extends Component {
         const currentMerch = this.merch[index];
 
         return (
-            <div className='relative flex items-center justify-center rounded-[50px] overflow-clip'>
-                <div className='relative '>
+            <div className='relative flex items-center justify-center '>
+                <div className='relative w-fit scale-90 lg:scale-100 rounded-[50px] overflow-clip'>
                     <img className='w-full h-full bg-cover' src={currentMerch.background} alt="merch background" />
                     <img className='absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2' src={currentMerch.item} alt="merch item" />
                 </div>
                 <button className='absolute top-1/2 -translate-y-1/2 left-10 cursor-pointer' onClick={this.handlePrevious}>
-                    <img src="./assets/merch/merch-rarrow.png" alt="previous icon" className='rotate-180' />
+                    <img className='size-1/2 lg:size-full rotate-180' src="./assets/merch/merch-rarrow.png" alt="previous icon" />
                 </button>
                 <button className='absolute top-1/2 -translate-y-1/2 right-10 cursor-pointer' onClick={this.handleNext}>
-                    <img src="./assets/merch/merch-rarrow.png" alt="next icon" />
+                    <img className='size-1/2 lg:size-full' src="./assets/merch/merch-rarrow.png" alt="next icon" />
                 </button>
-                <span className='absolute top-52 right-40 font-montserrat text-[#2A2027] lg:font-black lg:text-4xl'>Coming Soon...</span>
+                <span className='absolute top-[20%] right-[10%] text-xl lg:top-52 lg:right-40 font-montserrat text-[#2A2027] font-black lg:text-4xl'>Coming Soon...</span>
             </div>
         );
     }

@@ -41,9 +41,10 @@ const gamePreview = [
 ]
 
 export class GameOne extends Component {
+
   render() {
     return (
-      <section className="bg-black font-montserrat ">
+      <section className="bg-black font-montserrat relative">
         <div id='main' className='lg:mx-20 lg:pt-[138px] lg:pb-10 '>
           <div className='flex flex-col text-left'>
             <div className='flex flex-col'>

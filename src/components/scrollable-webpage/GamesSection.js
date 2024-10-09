@@ -5,10 +5,10 @@ import GamePreviewSlider from './GamePreviewSlider'
 export class GamesSection extends Component {
     render() {
         return (
-            <section className='bg-[#FFC700]'>
-                <div className="flex flex-col items-center justify-center text-center">
-                    <h2 className='lg:font-black lg:text-[200px] text-white font-montserrat'>GAMES</h2>
-                    <span className='lg:font-black lg:text-[64px] font-montserrat text-[#353535]'>Stay tuned for upcoming games !</span>
+            <section className='bg-[#FFC700] py-4'>
+                <div className="flex flex-col items-center justify-center text-center mx-4">
+                    <h2 className='font-black text-6xl lg:text-[200px] text-white font-montserrat'>GAMES</h2>
+                    <span className='mt-4  font-black text-3xl lg:text-[64px] font-montserrat text-[#353535]'>Stay tuned for upcoming games !</span>
                     <GameSlider></GameSlider>
                     <GamePreviewSlider></GamePreviewSlider>
                 </div>

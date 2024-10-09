@@ -71,12 +71,12 @@ class ItemSlider extends Component {
         return slidesToShow.slice(currentIndex * 3, currentIndex * 3 + 3).map((media, index) => (
             <div key={index} className=" p-2 rounded-3xl w-fit overflow-hidden">
                 {media.endsWith('.mp4') ? (
-                    <video controls className="rounded-3xl w-[456px] h-[310px]">
+                    <video controls className="rounded-3xl w-[278px] h-[155px] lg:w-[456px] lg:h-[310px]">
                         <source src={media} type="video/mp4" />
                         Your browser does not support the video tag.
                     </video>
                 ) : (
-                    <img src={media} alt={`Slide ${index}`} className="rounded-3xl w-[456px] h-[310px] bg-cover" />
+                    <img src={media} alt={`Slide ${index}`} className="rounded-3xl w-[278px] h-[155px] lg:w-[456px] lg:h-[310px] bg-cover" />
                 )}
             </div>
         ));
@@ -86,39 +86,39 @@ class ItemSlider extends Component {
         const { activeTab } = this.state;
 
         return (
-            <div className="mx-16 my-10">
+            <div className="mx-4 my-6 lg:mx-16 lg:my-10 w-fit">
                 <div className="flex justify-center mb-4 space-x-11">
                     <button
-                        className={`tab-button ${activeTab === 'all' ? 'text-[#FFA800]' : 'text-[#353535]'}  lg:font-black lg:text-[32px] font-montserrat`}
+                        className={`tab-button ${activeTab === 'all' ? 'text-[#FFA800]' : 'text-[#353535]'} font-black lg:text-[32px] font-montserrat`}
                         onClick={() => this.setActiveTab('all')}
                     >
                         All
                     </button>
                     <button
-                        className={`tab-button ${activeTab === 'images' ? 'text-[#FFA800]' : 'text-[#353535]'}  lg:font-black lg:text-[32px] font-montserrat`}
+                        className={`tab-button ${activeTab === 'images' ? 'text-[#FFA800]' : 'text-[#353535]'} font-black lg:text-[32px] font-montserrat`}
                         onClick={() => this.setActiveTab('images')}
                     >
                         Images
                     </button>
                     <button
-                        className={`tab-button ${activeTab === 'videos' ? 'text-[#FFA800]' : 'text-[#353535]'} lg:font-black lg:text-[32px] font-montserrat`}
+                        className={`tab-button ${activeTab === 'videos' ? 'text-[#FFA800]' : 'text-[#353535]'} font-black lg:text-[32px] font-montserrat`}
                         onClick={() => this.setActiveTab('videos')}
                     >
                         Videos
                     </button>
                 </div>
 
-                <div className="flex items-center justify-center mt-14">
+                <div className="flex items-center justify-center mt-6 lg:mt-14 w-full">
                     {/* <button onClick={this.prevSlide} className="text-6xl rotate-180 py-[57px] px-[25px] rounded-[45px] bg-[#353535] drop-shadow-2xl">
                         <img src="./assets/arrow.png" alt="left arrow" />
                     </button> */}
-                    <div className="overflow-hidden w-4/5 mx-auto">
-                        <div className="slider flex transition-transform duration-1000 lg:space-x-[60px]">
+                    <div className="overflow-hidden lg:w-4/5 mx-4 w-full lg:mx-auto">
+                        <div className="slider flex transition-transform duration-1000 space-x-8 lg:space-x-[60px]">
                             {this.renderSlides()}
                         </div>
                     </div>
-                    <button onClick={this.nextSlide} className="text-6xl py-[57px] px-[25px] rounded-[45px] bg-[#353535] drop-shadow-2xl">
-                        <img src="./assets/arrow.png" alt="right arrow" />
+                    <button onClick={this.nextSlide} className="flex items-center justify-center text-lg py-3 px-2 scale-75 lg:scale-100 lg:text-6xl lg:py-[57px] lg:px-[25px] rounded-[45px] bg-[#353535] drop-shadow-2xl">
+                        <img className='scale-[30%] lg:scale-full' src="./assets/arrow.png" alt="right arrow" />
                     </button>
                 </div>
             </div>
