@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { useNavigate } from 'react-router-dom'
 
 const gameData = {
   title: "ALABAY HERITAGE",
@@ -44,7 +43,7 @@ const gamePreview = [
 export class GameOne extends Component {
   render() {
     return (
-      <section className="bg-black font-montserrat h-screen overflow-hidden">
+      <section className="bg-black font-montserrat ">
         <div id='main' className='lg:mx-20 lg:pt-[138px] lg:pb-10 '>
           <div className='flex flex-col text-left'>
             <div className='flex flex-col'>
