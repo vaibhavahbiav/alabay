@@ -11,7 +11,7 @@ import Social from './Social'
 export class ScrollablePage extends Component {
   render() {
     return (
-      <div className=''>
+      <section className='flex flex-col items-center justify-center'>
         <HistorySection></HistorySection>
         <ItemSlider></ItemSlider>
         <ProjectVision></ProjectVision>
@@ -20,7 +20,7 @@ export class ScrollablePage extends Component {
         <Merchandise></Merchandise>
         <GamesSection></GamesSection>
         <Social></Social>
-      </div>
+      </section>
     )
   }
 }

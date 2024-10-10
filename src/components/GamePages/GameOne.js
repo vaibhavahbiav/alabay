@@ -44,7 +44,7 @@ export class GameOne extends Component {
 
   render() {
     return (
-      <section className="bg-black font-montserrat relative">
+      <section className="bg-game-one-img bg-green-900 font-montserrat relative">
         <div id='main' className='lg:mx-20 lg:pt-[138px] lg:pb-10 '>
           <div className='flex flex-col text-left'>
             <div className='flex flex-col'>
@@ -53,7 +53,7 @@ export class GameOne extends Component {
 
               <div id='summary' className='flex flex-col space-y-8 lg:mt-10'>
                 <p className='lg:w-[600px] lg:font-bold lg:text-[22px] text-white'>{gameData.summary}</p>
-                <button className='flex items-center space-x-8 py-[10px] pl-4 pr-[73px] bg-[#90FFAE] rounded-[34px] w-fit hover:brightness-90 transition-all'>
+                <button className='flex items-center space-x-8 py-[10px] pl-4 pr-[73px] bg-[#90FFAE] rounded-[34px] w-fit hover:bg-white transition-all'>
                   <img src="././././assets/games/game-play.png" alt="play button" />
                   <span className='font-bold text-xl text-[#201E26]'>PLAY</span>
                 </button>
@@ -120,10 +120,13 @@ export class GameOne extends Component {
           </div>
         </div>
         {/* slider */}
-        <div className='absolute top-1/2 -translate-y-1/2 right-[72px] flex flex-col space-y-5'>
+        <div className='fixed top-1/2 -translate-y-1/2 right-[50px] hidden lg:flex lg:items-center flex-col space-y-5 lg:h-[380px]'>
           <button className='lg:size-[34px] rounded-lg bg-white/80 flex items-center justify-center group hover:bg-[#90FFAE] transition-colors'>
             <img className='group-hover:brightness-[20%] transition-all' src="././././assets/games/up-arrow.png" alt="up arrow" />
           </button>
+          <div className='lg:w-[22px] bg-white/80 lg:h-[80%] rounded-2xl lg:relative cursor-pointer'>
+            <div className='absolute top-0 left-0 h-1/3 w-full bg-[#90ffae] rounded-2xl cursor-pointer'></div>
+          </div>
           <button className='lg:size-[34px] rounded-lg bg-white/80 flex items-center justify-center group hover:bg-[#90FFAE] transition-colors rotate-180'>
             <img className='group-hover:brightness-[20%] transition-all' src="././././assets/games/up-arrow.png" alt="up arrow" />
           </button>

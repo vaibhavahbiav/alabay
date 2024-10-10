@@ -86,7 +86,7 @@ class ItemSlider extends Component {
         const { activeTab } = this.state;
 
         return (
-            <div className="mx-4 my-6 lg:mx-16 lg:my-10 w-fit">
+            <div className="mx-4 py-6 lg:py-10 w-full bg-white">
                 <div className="flex justify-center mb-4 space-x-11">
                     <button
                         className={`tab-button ${activeTab === 'all' ? 'text-[#FFA800]' : 'text-[#353535]'} font-black lg:text-[32px] font-montserrat`}
@@ -112,12 +112,12 @@ class ItemSlider extends Component {
                     {/* <button onClick={this.prevSlide} className="text-6xl rotate-180 py-[57px] px-[25px] rounded-[45px] bg-[#353535] drop-shadow-2xl">
                         <img src="./assets/arrow.png" alt="left arrow" />
                     </button> */}
-                    <div className="overflow-hidden lg:w-4/5 mx-4 w-full lg:mx-auto">
+                    <div className="overflow-hidden lg:w-4/5 mx-4 w-full ">
                         <div className="slider flex transition-transform duration-1000 space-x-8 lg:space-x-[60px]">
                             {this.renderSlides()}
                         </div>
                     </div>
-                    <button onClick={this.nextSlide} className="flex items-center justify-center text-lg py-3 px-2 scale-75 lg:scale-100 lg:text-6xl lg:py-[57px] lg:px-[25px] rounded-[45px] bg-[#353535] drop-shadow-2xl">
+                    <button onClick={this.nextSlide} className="flex items-center justify-center text-lg py-3 px-2 scale-75 lg:scale-100 lg:text-6xl lg:py-[57px] lg:px-[25px] rounded-[45px] bg-[#353535] shadow-[8px_9px_19px_0px_#000000A6]">
                         <img className='scale-[30%] lg:scale-full' src="./assets/arrow.png" alt="right arrow" />
                     </button>
                 </div>
