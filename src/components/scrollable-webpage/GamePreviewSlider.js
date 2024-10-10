@@ -40,7 +40,7 @@ class GamePreviewSlider extends Component {
             <section className='py-4'>
                 <div className='flex flex-col item space-y-5 items-center justify-center lg:space-y-11 lg:justify-start lg:items-start mt-10 lg:mt-28 mx-4 lg:mx-auto'>
                     <div className='flex items-center font-montserrat font-black text-6xl lg:text-[64px]'>
-                        <span className='text-[#FFA800]'>GAME&nbsp;</span>
+                        <span className='text-white lg:text-[#FFA800]'>GAME&nbsp;</span>
                         <span className='text-[#353535]'>PREVIEWS</span>
                     </div>
                     <div className='space-x-2 lg:space-x-4 relative lg:min-w-full lg:mx-auto min-w-full'>

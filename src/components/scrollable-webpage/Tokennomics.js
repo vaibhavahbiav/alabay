@@ -20,7 +20,7 @@ export class Tokennomics extends Component {
         return (
             <section className='bg-[#FFC700] py-4 pb-20 lg:pb-60 w-full relative z-[1] overflow-clip lg:after:z-[2] lg:after:bg-white lg:after:block lg:after:absolute lg:after:-bottom-[40%] lg:after:-left-[135px] lg:after:w-[150%] lg:after:h-1/2 lg:after:rotate-[14deg]'>
                 <div className="flex flex-col lg:pl-20 relative z-[3]">
-                    <h2 className='font-black text-6xl items-center justify-center lg:text-[200px] text-white lg:text-left font-montserrat'>TOKENOMICS</h2>
+                    <h2 className='font-black text-6xl items-center justify-center text-center lg:text-[200px] text-white lg:text-left font-montserrat'>TOKENOMICS</h2>
                     <div className='flex flex-col items-center justify-center mt-10 space-y-5 lg:flex-row lg:mr-10 lg:items-center lg:justify-center'>
                         <div className='flex flex-col w-fit space-y-5 lg:space-y-10 lg:mt-[166px]'>
                             {items.map((item, i) => {
