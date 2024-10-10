@@ -5,7 +5,7 @@ export class RoadMap extends Component {
   render() {
     return (
       <section className='bg-[#FFC700] py-4'>
-        <div className="justify-center items-center mx-4 lg:ml-20 flex flex-col">
+        <div className="justify-center items-center mx-0 lg:ml-20 flex flex-col">
             <h2 className='font-black text-6xl lg:text-[200px] text-white text-left font-montserrat'>ROAD MAP</h2>
             <div className='flex flex-col justify-center items-center text-left mt-5 lg:mt-0 lg:flex-row lg:mr-10 lg:items-center lg:justify-center'>
                 <div className='flex flex-col space-y-4 lg:space-y-10 text-center lg:text-left font-kumbh font-bold text-2xl w-[500px] lg:text-5xl lg:w-[685px] lg:ml-9'>

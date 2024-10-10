@@ -43,10 +43,10 @@ class GamePreviewSlider extends Component {
                         <span className='text-[#FFA800]'>GAME&nbsp;</span>
                         <span className='text-[#353535]'>PREVIEWS</span>
                     </div>
-                    <div className='lg:space-x-4 relative lg:min-w-full lg:mx-auto min-w-full'>
+                    <div className='space-x-2 lg:space-x-4 relative lg:min-w-full lg:mx-auto min-w-full'>
                         <div className='flex space-x-4 lg:space-x-10 '>
                             {displayedImages.map((src, i) => (
-                                <img className='size-[200px] lg:size-[500px] rounded-[28px] overflow-clip' key={`game preview - ${i}`} src={src} alt={`game preview ${start + i + 1}`} />
+                                <img className='size-[180px] lg:size-[500px] rounded-[28px] overflow-clip' key={`game preview - ${i}`} src={src} alt={`game preview ${start + i + 1}`} />
                             ))}
                         </div>
                         <button onClick={this.handleNext}>
