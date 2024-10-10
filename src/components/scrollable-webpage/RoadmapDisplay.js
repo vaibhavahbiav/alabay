@@ -31,7 +31,7 @@ export class RoadmapDisplay extends Component {
                     <div className='flex items-center justify-center overflow-clip space-x-2 rounded-3xl lg:space-x-5 '>
                         {roadmapItems.map((item, i) => {
                             return (
-                                <div key={`roadmap item - ${i}`} className={`${`bg-[${item.color}]`} ${i === 0 ? 'bg-[#DBC70C]':'bg-black'} ${i === 1 ? 'bg-[#00D4D4]':'bg-black'} ${i === 0 ? 'bg-[#D427FF]':'bg-black'} ${i === 0 ? 'bg-[#8F3A3C]':'bg-black'} lg:z-[3] flex flex-col justify-between items-center text-center text-white font-montserrat font-black text-base w-[150px] h-[200px] lg:text-[40px] lg:w-[350px] lg:h-[725px] relative z-[10] after:absolute after:block after:w-full after:h-full after:content-[""] after:bg-gradient-to-t after:from-white after:to-transparent after:to-40% after:z-[20]`}>
+                                <div key={`roadmap item - ${i}`} className={`${i === 0 ? 'bg-[#DBC70C]':'bg-black'} ${i === 1 ? 'bg-[#00D4D4]':'bg-black'} ${i === 0 ? 'bg-[#D427FF]':'bg-black'} ${i === 0 ? 'bg-[#8F3A3C]':'bg-black'} lg:z-[3] flex flex-col justify-between items-center text-center text-white font-montserrat font-black text-base w-[150px] h-[200px] lg:text-[40px] lg:w-[350px] lg:h-[725px] relative z-[10] after:absolute after:block after:w-full after:h-full after:content-[""] after:bg-gradient-to-t after:from-white after:to-transparent after:to-40% after:z-[20]`}>
                                     <span className='mt-2 lg:mt-6 lg:leading-10'>{item.text}</span>
                                     <img className='w-1/2 lg:w-full' src={item.image} alt="roadmap" />
                                 </div>
