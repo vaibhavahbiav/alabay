@@ -44,7 +44,7 @@ export class GameOne extends Component {
 
   render() {
     return (
-      <section className="bg-game-one-img bg-green-900 font-montserrat relative">
+      <section className="bg-[url('https://s3-alpha-sig.figma.com/img/9ea3/c2a5/258e9acc950cdef2a23e058d05c99fd5?Expires=1729468800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=h2ZtSZMtq87oU-xDZEgfe~ngWhCOn6K6OyHAjIJudqoYE5CadS0MrgBFiNUjZnFDgGRYZD4frEXa~A88lcBxbXniAnwuIRxwExdQSI1TUQqEOFCNGFG9Z~PEgAfUT52-Ax2qY6-LBj42LtVGMC-SkK2O4Cvi6vcfPn5LtuUIYxKipg~rEYw2OnUmQhODIg5rSd8e8WkK3LeJymeG4aKaaqxA7xNVNlTVAOoS~nnxlnFfXtPnL0CEUzupfA-fcicsNsnxYOaHtsKU2DIHEQWZjokx~4Yina8cgwgBTXuo9tFmj3SfuVMrc0ijXfmlH-FUAxhQGz7JDOxteYP5gSxTCg__')] bg-cover bg-no-repeat bg-center bg-scroll h-screen overflow-y-scroll font-montserrat relative ">
         <div id='main' className='lg:mx-20 lg:pt-[138px] lg:pb-10 '>
           <div className='flex flex-col text-left'>
             <div className='flex flex-col'>

@@ -43,7 +43,7 @@ export class GameTwo extends Component {
 
   render() {
     return (
-      <section className="bg-game-one-img bg-indigo-900 font-montserrat relative">
+      <section className="bg-[url('https://s3-alpha-sig.figma.com/img/17ad/b147/27a80e9f26b1592e8f58588da90159bc?Expires=1729468800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=UFuKumYsUeZsSWFb~Jen5kYxXglroCLa57Ac1lebJwyA8V9wguPeoZsGx-UgQp-XTJk5YBjlt~j-9mOO~adK1EwjN4pIf9Oh4j-2KgpsNkpaUAiPtbMXH~LyY67FL9GSnJDCP31C4gPGrvDjUWC27cgmLncTevMQZrFKobjRzAWGhPsZHCT-yTUH~FhIby8dOONu9u3-dXngof7GrAmD0lfZRnzE6DA2UivoL9wBafQNf8oU7aL~TiYQo72y9jmyfjqhi8ANq0lX~zVh-awjSVfWdp9e9mr4IAXEbGNrvTelrzeIR9YVLqt4uKKOCVEOWCrRT34iIops7e7MpyPgEg__')] bg-cover bg-no-repeat bg-center bg-scroll h-screen overflow-y-scroll font-montserrat relative">
         <div id='main' className='lg:mx-20 lg:pt-[138px] lg:pb-10 '>
           <div className='flex flex-col text-left'>
             <div className='flex flex-col'>
